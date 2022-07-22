@@ -1,0 +1,52 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.btn {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #e7e8d4;
+  color: black;
+  width: 200px;
+  height: 70px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 2;
+  transform: translateY(0);
+  transition: 1000ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover {
+  background-color: #f2d0d0;
+}
+
+.btn::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  background-image: url(./image/sad.png);
+  background-size: contain;
+}
+.btn:hover::after {
+  transform: translateY(55px);
+}
+/* .btn::before {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  content: "";
+  background-image: url(./image/heart.png);
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  transition: transform 300ms ease;
+  transform: translateY(55px);
+}
+
+.btn:hover::before {
+  transform: ;
+} */
