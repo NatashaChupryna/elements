@@ -2,6 +2,7 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+/* КНОПКА */
 .btn {
   position: relative;
   border: 1px solid black;
@@ -14,10 +15,12 @@ body {
   font-size: 20px;
   line-height: 2;
   transform: translateY(0);
-  transition: 1000ms;
+  transition: 250ms;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  cursor: pointer;
 }
 .btn:hover {
   background-color: #f2d0d0;
@@ -34,7 +37,8 @@ body {
 .btn:hover::after {
   transform: translateY(55px);
 }
-/* .btn::before {
+
+.btn::before {
   position: absolute;
   top: 20px;
   right: 35px;
@@ -44,9 +48,9 @@ body {
   width: 30px;
   height: 30px;
   transition: transform 300ms ease;
-  transform: translateY(55px);
+  transform: translateY(-55px);
 }
 
 .btn:hover::before {
-  transform: ;
-} */
+  transform: translateY(-1px);
+}
