@@ -1,0 +1,66 @@
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid red;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+
+    }
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+}
+
+//Font
+$PrimaryFont:'Roboto', sans-serif;
+$SecondaryFont:'Roboto Slab', serif;
+
+// Text color
+$PraimaryTextColor:#2C2C2C;
+$SecondaryTextColor:#000000;
+$PlaseholderTextColor: #505050;
+$AccentTextColor: #BBF330;
+$LinkTextColor:#7EB101;
+
+//Colors
+$MainColor:#FFFFFF;
+
+//button color
+$ButtonColor: #BBF330;
+$AccentButtonColor: #B5FF00;
+
+//border color
+$MainBorderColor: #7EB101;
+$AccentBorderColor: #597D00;
+$DefaultBorderColor: #FFE550;
+$ImgAccentBorderColor:#BBF330;
+$ErrorBorderColor:#FF705D;
+
+//shadows
+$ShadowDeskHeader:0px 4px 4px rgba(0, 0, 0, 0.25);
+$ShadowTabMobHeader:  0px 4px 24px rgba(105, 105, 105, 0.1);
+$ShadowFooter: 0px -4px 24px rgba(105, 105, 105, 0.1);
+$SliderShadow:0px 4px 4px rgba(0, 0, 0, 0.06);
+$AccentSliderShadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
