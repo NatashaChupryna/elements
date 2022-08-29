@@ -44,7 +44,7 @@
     </div> -->
 
     <!-- -----------***| FoodSta  |***---------- -->
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="container hero__container">
         <div class="hero__title--wrap">
           <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
@@ -66,13 +66,24 @@
           />
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="offerings">
       <div class="container offerings__container">
         <div class="img__border">
           <div class="img__background">
-            <img src="./image/foodsta/aple.png" alt="apple" class="img" />
+            <img 
+            srcset="./image/Offerings/apple201.png 201wv,
+            ./images/Offerings/apple257.png 257wv,
+            ./images/Offerings/apple396.png 396wv,
+            ./images/Offerings/apple402.png 402wv,
+            ./images/Offerings/apple514.png 514wv,
+            ./images/Offerings/apple792.png 792wv,
+            "
+            sizes="(min-width: 1280px) 396px, (min-width: 768px) 257px, (min-width: 320px) 202px, 100vw "
+            src="./images/Offerings/apple792.png" 
+            alt="apple" 
+            class="img"/>
           </div>
         </div>
 
@@ -84,7 +95,7 @@
             <li class="offerings__item">
               <div class="offerings__item__icon--bg">
                 <svg class="offerings__item__icon" width="32" height="32">
-                <use href="./image/icons.svg#rocket"></use>
+                <use href="./images/icons.svg#rocket"></use>
               </svg>
               </div>
               
@@ -95,7 +106,7 @@
             <li class="offerings__item">
               <div class="offerings__item__icon--bg">
               <svg class="offerings__item__icon" width="32" height="32">
-                <use href="./image/icons.svg#touch"></use>
+                <use href="./images/icons.svg#touch"></use>
               </svg>
               </div>
               <h3 class="offerings__item__title">Easy To Order</h3>
