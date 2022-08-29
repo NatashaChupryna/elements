@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
+
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -62,144 +63,131 @@
           <button class="hero__btn" type="button">Order Now</button>
         </div>
 
-        <div class="hero__img--wrap">
-          <img
-            class="hero__img"
-            src="./image/foodsta/img1@1x_D.png"
-            alt="meatballs wit souce"
-            width="528px"
-          />
+        <!-- -----------***| SWIPER  |***---------- -->
+    <div class="slider-content swiper__border">
+      <div class="swiper-button-prev swiper__btn swiper__btn--left">
+        <svg class="swiper__icon" width="40" height="48">
+          <use href="./image/icons.svg#arrow-left"></use>
+        </svg>
+      </div>
+
+      <div class="swiper-button-next swiper__btn swiper__btn--right">
+        <svg class="swiper__icon" width="28" height="34">
+          <use href="./image/icons.svg#arrow-right"></use>
+        </svg>
+      </div>
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide flex">
+            <div class="hero__img--wrap">
+              <img
+                class="hero__img"
+                src="./image/foodsta/img1@1x_D.png"
+                alt="meatballs wit souce"
+                width="528px"
+              />
+            </div>
+          </div>
+
+          <div class="swiper-slide flex">
+            <div class="hero__img--wrap">
+              <img
+                class="hero__img"
+                src="./image/foodsta/img2@1x_D.png"
+                alt="meatballs wit souce"
+                width="528px"
+              />
+            </div>
+          </div>
+
+          <div class="swiper-slide flex">
+            <div class="hero__img--wrap">
+              <img
+                class="hero__img"
+                src="./image/foodsta/img3@1x_D.png"
+                alt="meatballs wit souce"
+                width="528px"
+              />
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
 
+
+
+      </div>
+    </section>
+<!-- 
     <section class="offerings">
       <div class="container offerings__container">
         <div class="img__border">
           <div class="img__background">
-            <img 
-            srcset="
-           
-            ./image/Offerings/apple201.png 201w,
-            ./images/Offerings/apple257.png 257w,
-            ./images/Offerings/apple396.png 396w,
-            ./images/Offerings/apple402.png 402w,
-            ./images/Offerings/apple514.png 514w,
-            ./images/Offerings/apple792.png 792w,
-            "
-            sizes="(min-width: 1280px) 396px, (min-width: 768px) 257px, (min-width: 320px) 202px, 100vw "
-            src="./images/Offerings/apple792.png" 
-            alt="apple" 
-            class="img"/>
+            <img
+              srcset="
+                ./image/Offerings/apple201.png  201w,
+                ./images/Offerings/apple257.png 257w,
+                ./images/Offerings/apple396.png 396w,
+                ./images/Offerings/apple402.png 402w,
+                ./images/Offerings/apple514.png 514w,
+                ./images/Offerings/apple792.png 792w
+              "
+              sizes="(min-width: 1280px) 396px, (min-width: 768px) 257px, (min-width: 320px) 202px, 100vw "
+              src="./images/Offerings/apple792.png"
+              alt="apple"
+              class="img"
+            />
           </div>
         </div>
 
         <div class="offerings__title--wrap">
           <h2 class="offerings__title">What’s Special About Our Offerings</h2>
-          <p class="offerings__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+          <p class="offerings__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique. Duis cursus, mi quis
+            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+            vitae erat.
+          </p>
 
           <ul class="offerings__list">
             <li class="offerings__item">
               <div class="offerings__item__icon--bg">
                 <svg class="offerings__item__icon" width="32" height="32">
-                <use href="./images/icons.svg#rocket"></use>
-              </svg>
+                  <use href="./images/icons.svg#rocket"></use>
+                </svg>
               </div>
-              
+
               <h3 class="offerings__item__title">Fastest Delivery</h3>
-              <p class="offerings__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+              <p class="offerings__item__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros.
+              </p>
             </li>
 
             <li class="offerings__item">
               <div class="offerings__item__icon--bg">
-              <svg class="offerings__item__icon" width="32" height="32">
-                <use href="./images/icons.svg#touch"></use>
-              </svg>
+                <svg class="offerings__item__icon" width="32" height="32">
+                  <use href="./images/icons.svg#touch"></use>
+                </svg>
               </div>
               <h3 class="offerings__item__title">Easy To Order</h3>
-              <p class="offerings__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+              <p class="offerings__item__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros.
+              </p>
             </li>
-         
           </ul>
 
-           <button class="offerings__btn" type="button">Order Now</button>
+          <button class="offerings__btn" type="button">Order Now</button>
         </div>
       </div>
-    </section>
+    </section> -->
 
-<!-- -----------***| SWIPER  |***---------- -->
-<div class="slider-content swiper__border">
-  <div class="swiper-button-prev swiper__btn swiper__btn--left ">
-    <svg 
-    class="swiper__icon" 
-    width="28" 
-    height="34">
-    <use href=""></use>
-    </svg>
-  </div>
-
-    <div class="swiper-button-next swiper__btn swiper__btn--right ">
-    <svg 
-    class="swiper__icon" 
-    width="28" 
-    height="34">
-    <use href=""></use>
-    </svg>
-  </div>
-
-  <div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide flex">
-      
-      <div class="hero__img--wrap">
-          <img
-            class="hero__img"
-            src="./image/foodsta/img1@1x_D.png"
-            alt="meatballs wit souce"
-            width="528px"
-          />             
-    </div>
-    </div>
-
-    <div class="swiper-slide flex"> 
-      <div class="hero__img--wrap"> 
-          <img
-            class="hero__img"
-            src="./image/foodsta/img2@1x_D.png"
-            alt="meatballs wit souce"
-            width="528px"
-          />              
-      </div>
-      </div> 
-
-    <div class="swiper-slide flex"> 
-      <div class="hero__img--wrap">    
-          <img
-            class="hero__img"
-            src="./image/foodsta/img3@1x_D.png"
-            alt="meatballs wit souce"
-            width="528px"
-          />              
-    </div>
-  </div>
     
-  </div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"> 
-    <svg class="" width="" height="">
-    <use href=""></use>
-    </svg>
-  </div>
-  <div class="swiper-button-next"></div>
-
-</div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./swiper.js"></script>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./swiper.js"></script>
+  </body>
 </html>

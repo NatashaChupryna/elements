@@ -77,68 +77,138 @@
   cursor: pointer;
 }
 
-.hero__img--wrap {
+// .hero__img--wrap {
 
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    display: none;
-  }
+//   @media screen and (min-width: 320px) and (max-width: 767px) {
+//     display: none;
+//   }
 
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    top: 150px;
-    right: 32px;
-    width: 320px;
-    height: 320px;
-    border: 14px solid $DefaultBorderColor;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: #fefefe;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus,
-    &:active {
-      border: 14px solid $ButtonColor;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    top: -140px;
-    right: 16px;
-    height: 580px;
-    width: 580px;
-    margin-left: 14px;
-    border: 26px solid $DefaultBorderColor;
-    &:hover,
-    &:focus,
-    &:active {
-      border: 26px solid $ButtonColor;
-    }
-  }
-}
+//   @media screen and (min-width: 768px) {
+//     position: absolute;
+//     top: 150px;
+//     right: 32px;
+//     width: 320px;
+//     height: 320px;
+//     border: 14px solid $DefaultBorderColor;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border-radius: 50%;
+//     background-color: #fefefe;
+//     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     &:hover,
+//     &:focus,
+//     &:active {
+//       border: 14px solid $ButtonColor;
+//     }
+//   }
+//   @media screen and (min-width: 1200px) {
+//     top: -140px;
+//     right: 16px;
+//     height: 580px;
+//     width: 580px;
+//     margin-left: 14px;
+//     border: 26px solid $DefaultBorderColor;
+//     &:hover,
+//     &:focus,
+//     &:active {
+//       border: 26px solid $ButtonColor;
+//     }
+//   }
+// }
 
-.hero__img {
-  @media screen and (min-width: 768px) {
-    width: 292px;
-  }
-  @media screen and (min-width: 1200px) {
-     width: 528px;
-  }
+// .hero__img {
+//   @media screen and (min-width: 768px) {
+//     width: 292px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//      width: 528px;
+//   }
 
-}
+// }
 
 
 // slider
 
-.swiper {
-  width: 608px;
-  height: 580px;
-
+.slider-content {
+  position: absolute;
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: block;
+    width: 320px;
+    height: 320px;
+    top: 228px;
+    right: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    position: relative;
+    width: 580px;
+    height: 580px;
+    top: 0;
+    right: 18px;
+  }
 }
-.swiper-button-prev, .swiper-button-next {
-      box-shadow: 0px 4px 4px rgb(0 0 0 / 6%);
-    border-radius: 8px;
+
+.swiper__border {
+  border: 14px solid $yellow;
+  border-radius: 50%;
+  @media screen and (min-width: $desktop) {
+    border: 28px solid $yellow;
+  }
+}
+
+.swiper__btn {
+  position: absolute;
+  padding-top: 5px;
+  width: 34px;
+  height: 28px;
+  background: #fefefe;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  color: $black;
+  z-index: 10;
+  transition: color $time-cubic, box-shadow $time-cubic;
+
+  @media screen and (min-width: $desktop) {
+    border-radius: 4px;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $green-dark;
+  }
+
+  &:active {
+    color: $black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
+
+  .swiper__icon {
+    fill: currentColor;
     width: 48px;
     height: 40px;
-    background: #FEFEFE;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 48px;
+    height: 40px;
+  }
+}
+
+.swiper__btn--left {
+  left: -20px;
+  @media screen and (min-width: $desktop) {
+    left: -38px;
+  }
+}
+
+.swiper__btn--right {
+  right: -20px;
+  @media screen and (min-width: $desktop) {
+    right: -38px;
+  }
 }
