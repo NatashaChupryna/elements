@@ -139,3 +139,25 @@
 }
 }
 
+// slider
+
+.slideshow-container{
+  max-width: 608px ;
+  position: relative;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute ;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+   border-radius:  3px 0 0 3px ;
+}
