@@ -1,23 +1,21 @@
-var slideIndex = 1;
-showSlides(slideIndex);
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-function currentSlide(n) {
-     showSlides(slideIndex = n)
-}
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("myslides");
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
 
-    if (n > slides.length) {
-        slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++){
-        slides[i].style.display = "none";
-    }
-slides[slideIndex-1].style.display = "block"
-}
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
