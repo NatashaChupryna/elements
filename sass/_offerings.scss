@@ -1,28 +1,21 @@
 .offerings {
   padding-top: 260px;
   padding-bottom: 131px;
-  background-image: url(../image/Offerings/bg-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
   margin-top: -160px;
-
-  @media screen and (min-width: 1200px) {
-    background-image: url(../images/Offerings/bg-tab.png);
-  }
-
-  @media screen and (min-width: 1200px) {
     padding-top: 260px;
     padding-bottom: 131px;
     margin-top: -160px;
-    background-image: url(../images/Offerings/bg@1x-des.jpg);
+    background-image: url(../image/Offerings/bg@1x-des.jpg);
     @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/Offerings/bg@2x-des.jpg);
-    }
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    background-image: url(../image/Offerings/bg@2x-des.jpg);
   }
-}
+
+  }
 
 .offerings__container {
  

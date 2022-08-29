@@ -1,0 +1,128 @@
+.hero {
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 160px;
+     padding-bottom: 150px;
+  }
+}
+
+.hero__container {
+  @media screen and (min-width: 768px){
+    position: relative;
+  
+  }
+
+}
+
+.hero__title--wrap {
+  margin: 0;
+
+  @media screen and (min-width: 768px) {
+    width: 537px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 503px;
+    margin-right: 137px;
+  }
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  margin-bottom: 28px;
+  color: $PraimaryTextColor;
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    margin-bottom: 44px;
+    line-height: 1.19;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 28px;
+    font-size: 48px;
+    line-height: 1.2;
+  }
+}
+
+.hero__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 34px;
+  color: $PraimaryTextColor;
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+@media screen and (min-width: 1200px){
+   width: 502px;
+}
+
+}
+
+.hero__btn {
+  padding: 5px 17px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.54;
+  border-radius: 30px;
+  border: none;
+  color: $PraimaryTextColor;
+  background-color: $ButtonColor;
+  cursor: pointer;
+}
+
+.hero__img--wrap {
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 150px;
+    right: 32px;
+    width: 320px;
+    height: 320px;
+    border: 14px solid $DefaultBorderColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fefefe;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus,
+    &:active {
+      border: 14px solid $ButtonColor;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    top: -140px;
+    right: 16px;
+    height: 580px;
+    width: 580px;
+    margin-left: 14px;
+    border: 26px solid $DefaultBorderColor;
+    &:hover,
+    &:focus,
+    &:active {
+      border: 26px solid $ButtonColor;
+    }
+  }
+}
+
+.hero__img {
+  @media screen and (min-width: 768px) {
+    width: 292px;
+  }
+  @media screen and (min-width: 1200px) {
+     width: 528px;
+  }
+
+}
