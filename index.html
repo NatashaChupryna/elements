@@ -126,7 +126,7 @@
   <div class="modal">
     <button type="button" class="modal__close-btn" data-modal-close>
       <svg class="modal__close-icon" width="24" height="24">
-        <use href="./images/icons.svg#menu"></use>
+        <use href="./image/icons.svg#close"></use>
       </svg>
     </button>
     <form class="modal-form">
@@ -143,6 +143,7 @@
             class="modal-form__input"
             type="text"
             name="name"
+            required minlength="3" maxlength="25"
             placeholder="Your name"
           />
         </label>
@@ -154,6 +155,8 @@
             type="tel"
             name="tel"
             placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            pattern="^\+(?:[0-9]●?){6,14}[0-9]$"
+             title=" This phone must be in the format  099 000 00 00"
           />
         </label>
 
@@ -165,11 +168,12 @@
             name="email"
             placeholder="example@gmail.com"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            title="Invalid email address"
           />
         </label>
       </div>
 
-      <button class="btn modal-form__btn" type="submit">Send</button>
+      <button class="btn modal-form__btn" type="submit" title="All fields are required">Send</button>
     </form>
   </div>
 </div>
