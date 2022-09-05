@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .offerings {
   padding-top: 260px;
   padding-bottom: 131px;
@@ -310,19 +311,86 @@ ul {
 }
 
 .swiper__border {
-  border: 14px solid #FFE550;
+  border: 14px solid #ffe550;
   border-radius: 50%;
 }
 @media screen and (min-width: 1280px) {
   .swiper__border {
-    border: 28px solid #FFE550;
+    border: 28px solid #ffe550;
+  }
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding-top: 30px;
+  padding-left: 20px;
+  z-index: 1;
+}
+
+.swiper__btn {
+  position: absolute;
+  padding-top: 5px;
+  width: 34px;
+  height: 28px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  color: black;
+  z-index: 10;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1280px) {
+  .swiper__btn {
+    border-radius: 4px;
+  }
+}
+.swiper__btn::after {
+  display: none;
+}
+.swiper__btn:hover, .swiper__btn:focus {
+  color: #7eb101;
+}
+.swiper__btn:active {
+  color: black;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+.swiper__btn .swiper__icon {
+  fill: currentColor;
+  width: 48px;
+  height: 40px;
+}
+
+.swiper__btn--left {
+  left: -20px;
+}
+@media screen and (min-width: 1280px) {
+  .swiper__btn--left {
+    left: -38px;
+  }
+}
+
+.swiper__btn--right {
+  right: -20px;
+}
+@media screen and (min-width: 1280px) {
+  .swiper__btn--right {
+    right: -38px;
   }
 }
 
 .slider-content .swiper-button-prev::after {
   color: black;
   font-size: 32px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   min-width: 40px;
   height: 48px;
   display: -webkit-box;
@@ -339,7 +407,7 @@ ul {
 .slider-content .swiper-button-next::after {
   color: black;
   font-size: 32px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   min-width: 40px;
   height: 48px;
   display: -webkit-box;
@@ -351,6 +419,20 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.swiper-button-next {
+  right: -25px;
+  left: auto;
+}
+
+.swiper-button-prev {
+  left: -25px;
+  right: auto;
+}
+
+.hero__img {
+  width: 528px;
 }
 
 /* Backdrop */
@@ -400,27 +482,21 @@ ul {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: #FFE550;
+  background-color: #ffe550;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 30px;
   opacity: 1;
   z-index: 500;
 }
-@media screen and (min-width: 320px) {
-  .modal {
-    max-width: 458px;
-    width: 100%;
-  }
-}
 @media screen and (min-width: 768px) {
   .modal {
     max-width: 458px;
     min-height: 449px;
     top: 98px;
-    left: 50%;
-    -webkit-transform: translateX(-50%) scale(1);
-            transform: translateX(-50%) scale(1);
+    left: 45%;
+    -webkit-transform: translateX(-48%) scale(1);
+            transform: translateX(-48%) scale(1);
   }
 }
 @media screen and (min-width: 1280px) {
@@ -437,7 +513,7 @@ ul {
   height: 32px;
   border-radius: 50%;
   border: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   display: -webkit-box;
@@ -503,44 +579,62 @@ ul {
   padding: 14px 12px;
   height: 48px;
   background: white;
-  border: 1px solid #7EB101;
+  border: 1px solid #7eb101;
   border-radius: 30px;
   outline: transparent;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form__input:focus-within, .modal-form__input:hover {
-  border-color: #7EB101;
+  border-color: #7eb101;
 }
 .modal-form__input::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #C4C4C4;
+  color: #c4c4c4;
 }
 .modal-form__input::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #C4C4C4;
+  color: #c4c4c4;
 }
 .modal-form__input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #C4C4C4;
+  color: #c4c4c4;
 }
 .modal-form__input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #C4C4C4;
+  color: #c4c4c4;
 }
 .modal-form__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #C4C4C4;
+  color: #c4c4c4;
+}
+
+.modal-form__input:invalid .modal__notification {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.modal__notification {
+  color: #FF705D;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.4;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form__btn {
@@ -562,5 +656,47 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form__btn:hover, .modal-form__btn:focus, .modal-form__btn:active {
-  background-color: #7EB101;
+  background-color: #7eb101;
+}
+
+.Pmenu {
+  display: block; /*делаем информацию видимой*/
+  position: absolute;
+  background-color: #FE6060; /*цвет плиток*/
+  width: 0px; /*размер плитки*/
+  border-radius: 30px 0px 30px 30px; /*режем углы*/
+}
+
+.Pmenu li {
+  display: block; /*делаем информацию видимой*/
+  position: absolute;
+  background-color: #FE6060; /*цвет плиток*/
+  width: 165px; /*размер плитки*/ /*режем углы*/
+}
+
+.openPB {
+  display: none; /*скрывает подсказку*/
+  width: 165px;
+  height: 54px;
+  padding: 16px; /*размер подсказки*/
+  position: absolute; /*указываем позицию*/
+  background-color: #FE6060; /*цвет фона*/
+  border-radius: 20px 20px 20px 20px; /*режем углы*/
+  bottom: 100%;
+  left: 40px;
+  text-align: center; /*расположения подсказки*/
+}
+
+.openPB li {
+  text-decoration: none;
+} /*убираем точку в начале текста*/
+.Pmenu:hover .openPB {
+  display: block;
+}
+
+.Pmenu li:hover {
+  background-color: #ffffff;
+} /*цвет плитки при касании*/
+li {
+  font-size: 12px;
 }/*# sourceMappingURL=main.css.map */

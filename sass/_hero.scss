@@ -4,16 +4,14 @@
 
   @media screen and (min-width: 1200px) {
     padding-top: 160px;
-     padding-bottom: 150px;
+    padding-bottom: 150px;
   }
 }
 
 .hero__container {
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     position: relative;
-  
   }
-
 }
 
 .hero__title--wrap {
@@ -59,10 +57,9 @@
     margin-bottom: 40px;
     font-size: 16px;
   }
-@media screen and (min-width: 1200px){
-   width: 502px;
-}
-
+  @media screen and (min-width: 1200px) {
+    width: 502px;
+  }
 }
 
 .hero__btn {
@@ -127,7 +124,6 @@
 
 // }
 
-
 // slider
 
 .slider-content {
@@ -150,32 +146,35 @@
 }
 
 .swiper__border {
-  border: 14px solid #FFE550;
+  border: 14px solid #ffe550;
   border-radius: 50%;
-  @media screen and (min-width:1280px) {
-    border: 28px solid #FFE550;
+  @media screen and (min-width: 1280px) {
+    border: 28px solid #ffe550;
   }
 }
 .swiper {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1;}
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding-top: 30px;
+  padding-left: 20px;
+  z-index: 1;
+}
 
 .swiper__btn {
   position: absolute;
   padding-top: 5px;
   width: 34px;
   height: 28px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
   color: black;
   z-index: 10;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 1280px) {
     border-radius: 4px;
@@ -185,10 +184,10 @@
   }
   &:hover,
   &:focus {
-    color: #7EB101;
+    color: #7eb101;
   }
   &:active {
-    color: $black;
+    color: black;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
   }
 
@@ -212,10 +211,10 @@
     right: -38px;
   }
 }
-.slider-content .swiper-button-prev::after{
+.slider-content .swiper-button-prev::after {
   color: black;
   font-size: 32px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   min-width: 40px;
   height: 48px;
   display: flex;
@@ -223,15 +222,28 @@
   justify-content: center;
 }
 
-.slider-content .swiper-button-next::after{
+.slider-content .swiper-button-next::after {
   color: black;
   font-size: 32px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   min-width: 40px;
   height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.swiper-button-next {
+  right: -25px;
+  left: auto;
+}
+
+.swiper-button-prev {
+  left: -25px;
+  right: auto;
+}
+
+.hero__img {
+  width: 528px;
 }
 // MODAL
 /* Backdrop */
@@ -244,7 +256,8 @@
   width: 100vw;
   background-color: rgba(94, 99, 99, 0.7);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 9999;
   visibility: visible;
   @media screen and (max-width: (768px - 0.02px)) {
@@ -273,8 +286,9 @@
   width: 320px;
   min-height: 449px;
   padding: 32px 20px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: #FFE550;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #ffe550;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 30px;
   opacity: 1;
@@ -282,7 +296,7 @@
 
   @media screen and (min-width: 768px) {
     max-width: 458px;
-   min-height: 449px;
+    min-height: 449px;
     top: 98px;
     left: 45%;
     transform: translateX(-48%) scale(1);
@@ -293,21 +307,20 @@
   }
 }
 
-.modal__close-btn{
+.modal__close-btn {
   position: absolute;
   top: 16px;
-    right: 16px;
+  right: 16px;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   border: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 11px;
-   
 }
 .modal__close-icon {
   width: 24px;
@@ -351,44 +364,93 @@
   padding: 14px 12px;
   height: 48px;
   background: white;
-  border: 1px solid #7EB101;
+  border: 1px solid #7eb101;
   border-radius: 30px;
   outline: transparent;
-  transition: border-color  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus-within,
   &:hover {
-    border-color: #7EB101;
+    border-color: #7eb101;
   }
 
   &::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: #C4C4C4;
+    color: #c4c4c4;
   }
 }
 
-.modal-form__btn {
-    text-align: center;
-    min-width: 106px;
-    color: #2c2c2c;
-    background: #fff;
-    border: 2px solid #7eb101;
-    margin: 0 auto;
-    padding: 8px 34px;
-    display: block;
-        cursor: pointer;
-    border-radius: 30px;
-    font-family: inherit;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 1.5;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal-form__input:invalid .modal__notification{
+ 
+  transform: scaleY(1);
+}
 
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: #7EB101;
-    }
+.modal__notification{
+  // display: none;
+color: #FF705D;
+font-weight: 500;
+font-size: 13px;
+line-height: 1.4;
+transform: scaleY(0);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.modal-form__btn {
+  text-align: center;
+  min-width: 106px;
+  color: #2c2c2c;
+  background: #fff;
+  border: 2px solid #7eb101;
+  margin: 0 auto;
+  padding: 8px 34px;
+  display: block;
+  cursor: pointer;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #7eb101;
+  }
+}
+.Pmenu{
+    display: block;/*делаем информацию видимой*/
+    position: absolute;
+    background-color: #FE6060; /*цвет плиток*/
+    width: 0px; /*размер плитки*/
+    border-radius: 30px 0px 30px 30px;/*режем углы*/
+}
+.Pmenu li{
+    display: block;/*делаем информацию видимой*/
+    position: absolute;
+    background-color: #FE6060; /*цвет плиток*/
+    width: 165px; /*размер плитки*//*режем углы*/
+}
+ 
+.openPB{
+  display: none; /*скрывает подсказку*/
+  width: 165px; height: 54px;
+  padding: 16px; /*размер подсказки*/
+  position: absolute;  /*указываем позицию*/
+  background-color: #FE6060; /*цвет фона*/
+  border-radius: 20px 20px 20px 20px;  /*режем углы*/
+  bottom: 100%;  left: 40px; 
+  text-align: center;/*расположения подсказки*/
+}
+.openPB li{text-decoration: none;} /*убираем точку в начале текста*/
+ 
+.Pmenu:hover .openPB {display: block;}
+.Pmenu li:hover {background-color: #ffffff;} /*цвет плитки при касании*/
+
+li{
+  font-size: 12px;
 }
