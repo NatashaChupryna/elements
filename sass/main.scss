@@ -1,3 +1,232 @@
 @import './offerings';
 @import './base';
 @import './hero';
+
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* ФОТО */
+.div {
+  border: 1px solid grey;
+  width: 300px;
+  height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 20px;
+  color: white;
+  background: linear-gradient(
+    to left,
+    rgb(221, 24, 24, 0.5),
+    rgb(51, 51, 51, 0.5)
+  );
+  transform: translateX(100%);
+  transition: transform 1000ms ease;
+}
+.card:hover .overlay {
+  transform: translateX(-0.001%);
+}
+.title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 2;
+  text-align: center;
+}
+/* КНОПКА */
+.btn {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #e7e8d4;
+  color: black;
+  width: 200px;
+  height: 70px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 2;
+  transform: translateY(0);
+  transition: 250ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+.btn:hover {
+  background-color: #f2d0d0;
+}
+
+.btn::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  background-image: url(./image/sad.png);
+  background-size: contain;
+}
+.btn:hover::after {
+  transform: translateY(55px);
+}
+
+.btn::before {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  content: "";
+  background-image: url(./image/heart.png);
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  transition: transform 300ms ease;
+  transform: translateY(-55px);
+}
+
+.btn:hover::before {
+  transform: translateY(-1px);
+}
+
+/* ШАРИ */
+.circle-container {
+  border: 2px dashed #2a2a2a;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  transform: translatex(0);
+  transition-property: transform;
+  transition-duration: 2000ms;
+}
+
+.circle:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.container:hover .circle {
+  transform: translatex(calc(100vw - 86px));
+}
+
+.circle:nth-child(1) {
+  background-color: #f44336;
+  transition-timing-function: linear;
+}
+
+.circle:nth-child(2) {
+  background-color: #5e71df;
+  transition-timing-function: ease;
+}
+
+.circle:nth-child(3) {
+  background-color: #e6b52d;
+  transition-timing-function: ease-in;
+}
+
+.container{
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+padding-left: 16px;
+padding-right: 16px;
+
+}
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900);
+
+body {
+  font-family: 'Cinzel Decorative', cursive;
+  background: url(https://s.cdpn.io/3/blurry-blue.jpg);
+  background-size: cover;
+  color: white;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+.embiggen {
+  font-size: 4em;
+  text-shadow: 0 0 40px #ffbab3;
+}
+article {
+  max-width: 600px;
+  overflow: hidden;
+  margin: 0 auto 50px;
+}
+
+.subtitle {
+  margin: 0 0 2em 0;
+}
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 0;
+  width: 600px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+.amp {
+  margin: 0 0 0.25em 0;
+}
+.amp span {
+  font-size: 0.7em;
+}
+
+.copy {
+  font: 1em Georgia, Serif;
+  text-align: justify;
+}
+.copy p {
+  margin: 0 0 1em 0;
+}
