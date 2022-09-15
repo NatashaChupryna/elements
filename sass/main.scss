@@ -164,14 +164,14 @@ padding-right: 16px;
 
 
 
-@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900);
+// @import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900);
 
-body {
-  font-family: 'Cinzel Decorative', cursive;
-  background: url(https://s.cdpn.io/3/blurry-blue.jpg);
-  background-size: cover;
-  color: white;
-}
+// body {
+//   font-family: 'Cinzel Decorative', cursive;
+//   background: url(https://s.cdpn.io/3/blurry-blue.jpg);
+//   background-size: cover;
+//   color: white;
+// }
 
 h1 {
   font-size: 3em;
@@ -229,4 +229,18 @@ article {
 }
 .copy p {
   margin: 0 0 1em 0;
+}
+
+
+.elementToFadeInAndOut {
+  width:200px;
+  height: 200px;
+  background: red;
+  animation: fadeinout 4s linear forwards;
+}
+
+
+@keyframes fadeinout {
+0%,100% { opacity: 0; }
+50% { opacity: 1; }
 }
